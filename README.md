@@ -8,6 +8,8 @@ Topics:
 - HTTP headers and status codes
 - Request parameters
 - API design and development
+- Understanding [module exports](https://www.freecodecamp.org/news/module-expoarts-how-to-export-in-node-js-and-javascript/)
+- Controller, Models, Routes Structure
 
 ## Description
 
