@@ -10,6 +10,7 @@ Topics:
 - API design and development
 - Understanding [module exports](https://www.freecodecamp.org/news/module-expoarts-how-to-export-in-node-js-and-javascript/)
 - Controller, Models, Routes Structure
+- Query and Params in get requests
 
 ## Description
 
@@ -49,9 +50,9 @@ contents of the post, also as a String.
 There are four main route handlers that will allow the client to read/modify the
 array.
 
-### `GET /posts`
+### `GET /post`
 
-When the client makes a `GET` request to `/posts`:
+When the client makes a `GET` request to `/post`:
 
 - If the client provides the query-string parameter `term`, filter the posts to
   those that have the `term` in their `title` or `contents` (or both), and
@@ -59,7 +60,7 @@ When the client makes a `GET` request to `/posts`:
 
 - Otherwise, send down the full array of posts as a JSON response.
 
-### `POST /posts`
+### `POST /post`
 
 When the client makes a `POST` request to `/posts`:
 
@@ -73,7 +74,7 @@ message" }` as a JSON response. Make sure to respond with an appropriate
   the posts array. Return the newly created post object, with its assigned `id`,
   to the client in a JSON response.
 
-### `PUT /posts`
+### `PUT /post`
 
 When the client makes a `PUT` request to `/posts/:id`:
 
@@ -88,7 +89,7 @@ message" }` as a JSON response. Make sure to respond with an appropriate
 - Modify the post with the given `id`, updating its `title` and `contents`.
   Respond with the newly updated post object in a JSON response.
 
-### `DELETE /posts/:id`
+### `DELETE /post/:id`
 
 When the client makes a `DELETE` request to `/posts`:
 
