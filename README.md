@@ -74,7 +74,7 @@ message" }` as a JSON response. Make sure to respond with an appropriate
   the posts array. Return the newly created post object, with its assigned `id`,
   to the client in a JSON response.
 
-### `PUT /post`
+### `PUT /post/:id`
 
 When the client makes a `PUT` request to `/posts/:id`:
 
